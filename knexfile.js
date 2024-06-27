@@ -7,9 +7,12 @@ module.exports = {
 
   development: {
     client: 'pg',
-    connection: 'postgres:localhost/teas',
+    connection: 'postgres://localhost/teas',
       // filename: './dev.sqlite3',
       // filename: 'postgres://localhost/teas',
+    migrations: {
+      directory: './db/migrations'
+    },
     useNullAsDefault: true
   },
 
