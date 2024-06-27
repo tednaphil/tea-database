@@ -1,0 +1,121 @@
+let teaData = [
+    {
+        "id": 1,
+        "name": "Assam Tea",
+        "slug": "assam",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Assam-Tee_SFTGFOP1.jpg",
+        "origin": "Assam, India",
+        "type": "black",
+        "caffeine": "60-110mg",
+        "caffeineLevel": "high",
+        "description": "Assam tea is mostly grown at or near sea level and is known for its body, briskness, malty flavour, and strong, bright colour. Assam teas, or blends containing Assam, are often sold as \"breakfast\" teas.",
+        "colorDescription": "deep-amber",
+        "tasteDescription": "The flavor can range from brisk, smokey, earthy, musky and strong to a lighter cup with chocolate, cocoa, or even sweet and spicy notes"
+    },
+    {
+        "id": 2,
+        "name": "Sencha Tea",
+        "slug": "sencha",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/2017_Kagoshima_sencha.jpg/1024px-2017_Kagoshima_sencha.jpg?20170624211809",
+        "origin": "Japan",
+        "type": "green",
+        "caffeine": "20-40mg",
+        "caffeineLevel": "low",
+        "description": "A Japanese green tea prepared by infusing whole tea leaves in hot water.",
+        "colorDescription": "light green",
+        "tasteDescription": "fresh, herbal, or grassy flavor, which can have varying vegetal grassy notes depending on how long it is steeped."
+    },
+    {
+        "id": 3,
+        "name": "Da Hong Pao",
+        "slug": "dahongpao",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Da_Hong_Pao_Oolong_tea_leaf.jpg",
+        "origin": "China",
+        "type": "oolong",
+        "caffeine": "20-30mg",
+        "caffeineLevel": "moderate",
+        "description": "A Wuyi rock tea grown in the Wuyi Mountains of Fujian Province, China",
+        "colorDescription": "orange-yellow, bright and clear",
+        "tasteDescription": "peaty and earthy notes with hints of stone fruit, brown sugar, and molasses"
+    },
+    {
+        "id": 4,
+        "name": "Baihoi Yinzhen",
+        "slug": "baihoiyinzhen",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg/640px-2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg",
+        "origin": "China",
+        "type": "white",
+        "caffeine": "0-5mg",
+        "caffeineLevel": "very low",
+        "description": "A white tea made from only the top buds of the Camellia sinensis plant.",
+        "colorDescription": "light orange, light yellow",
+        "tasteDescription": "sweet, vegetal, and delicate"
+    },
+    {
+        "id": 5,
+        "name": "Earl Grey",
+        "slug": "earlgrey",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/640px-Earl_Grey_Tea.jpg",
+        "origin": "UK*",
+        "type": "blend",
+        "caffeine": "40-120mg",
+        "caffeineLevel": "very high",
+        "description": "A tea blend which has been flavoured with oil of bergamot",
+        "colorDescription": "amber, deep orange",
+        "tasteDescription": "smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey"
+    },
+    {
+        "id": 6,
+        "name": "English Breakfast tea",
+        "slug": "englishbreakfast",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/English_breakfast_tea_tin.jpg/536px-English_breakfast_tea_tin.jpg",
+        "origin": "UK",
+        "type": "blend",
+        "caffeine": "60-100mg",
+        "caffeineLevel": "very high",
+        "description": "a traditional blend of black teas from Assam, Ceylon, Keemun and Kenyan teas.",
+        "colorDescription": "deep amber",
+        "tasteDescription": "may be slightly sweet, bitter, or malty"
+    },
+    {
+        "id": 7,
+        "name": "Konacha",
+        "slug": "konacha",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Konacha.jpg/640px-Konacha.jpg",
+        "origin": "Japan",
+        "type": "green",
+        "caffeine": "based on plant growth",
+        "caffeineLevel": "varied",
+        "description": "A type of green tea, composed of the dust, tea buds and small leaves that are left behind after processing Gyokuro or Sencha",
+        "colorDescription": "intense green, deep green",
+        "tasteDescription": "mild, sweet, and grassy flavor with bitter after taste"
+    },
+    {
+        "id": 8,
+        "name": "Satemwa Antlers",
+        "slug": "satemwaantlers",
+        "image": "https://tea-api-boonaki.herokuapp.com/assets/satemwa-antlers.jpg",
+        "origin": "Malawi",
+        "type": "white",
+        "caffeine": "10-25mg",
+        "caffeineLevel": "moderate",
+        "description": "A white tea made from a blend of select Superior Cultivars from Malawi, making it rich in theanine and antioxidants.",
+        "colorDescription": "golden yellow",
+        "tasteDescription": "delicate sweetness of apricot and lychee lingers on the pallet"
+    },
+    {
+        "id": 9,
+        "name": "Dianhong Tea",
+        "slug": "dianhong",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/GoldenDianHong.jpg/800px-GoldenDianHong.jpg?20071029183852",
+        "origin": "Yunnan Province, China",
+        "type": "black",
+        "caffeine": "20-40mg",
+        "caffeineLevel": "moderate",
+        "decription": "A relatively high-end, gourmet Chinese black tea sometimes used in various tea blends. The main difference between Dianhong and other Chinese black teas is the amount of fine leaf buds, or \"golden tips,\" present in the dried tea.",
+        "colorDescription": "golden orange",
+        "tasteDescription": "sweet, floral, and honey-like, though tends to be stronger and more bitter than other red teas"
+    }
+  ];
+
+  module.exports = teaData;
