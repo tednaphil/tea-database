@@ -18,19 +18,25 @@ app.listen(app.get('port'), () => {
     console.log(`${app.locals.title} is running on http://localhost:${app.get('port')}.`);
   });
 
-// app.get('/api/v1/teas', (request, response) => {
-//   const teas = app.locals.teas;
+app.get('/api/v1/teas', async (request, response) => {
+  try {
+    const teas = await database('teas').select();
+    response.status(200).json(teas);
+  } catch(error) {
+    response.status(500).json({ error });
+  }
+});
 
-//   response.json({ teas });
-// });
-
-// app.get('/api/v1/teas/:id', (request, response) => {
-//   // console.log(request.params)
-//   const id = request.params.id;
-//   const tea = app.locals.teas.find(obj => obj._id === id);
-//   if (tea) {
-//       response.status(200).json({tea})
-//   } else {
-//       response.sendStatus(404)
-//   }
-// })
+app.get('/api/v1/teas/:id', async (request, response) => {
+  try {
+    const id = request.params.id;
+    const tea = await database('teas').where('id', id).select();
+    if (tea) {
+        response.status(200).json(tea[0])
+    } else {
+        response.sendStatus(404).json({error: `Could not find paper with id ${id}`})
+    }
+  } catch(error) {
+    response.status(500).json({ error })
+  }
+})
